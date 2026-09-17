@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Seminars & Conferences",
+    "icon": "presentation",
+    "text": "Academic discussions, annual conferences, memorial lectures and intellectual dialogue."
+  },
+  {
+    "title": "Publications",
+    "icon": "book",
+    "text": "Books, commemorative publications, research-oriented articles and cultural documentation."
+  },
+  {
+    "title": "Bengali Language & Culture",
+    "icon": "languages",
+    "text": "Programs that celebrate Bengali language, literature, heritage and cross-border cultural exchange."
+  },
+  {
+    "title": "Interfaith Harmony",
+    "icon": "heart",
+    "text": "Dialogue and cooperation focused on peace, coexistence and a humane society."
+  },
+  {
+    "title": "Youth & Leadership",
+    "icon": "users",
+    "text": "Encouraging young people to develop knowledge, values, leadership and social responsibility."
+  },
+  {
+    "title": "Education & Social Reform",
+    "icon": "graduation",
+    "text": "Programs inspired by Vidyasagar’s educational and social reform legacy."
+  }
+]

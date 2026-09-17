@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #087a4b;
+  --brand-dark: #153f33;
+  --paper: #f8f3e9;
+  --coral: #d98978;
+  --gold: #b99245;
+  --ink: #202925;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: #fffdf9; }
+::selection { background: #d9eadf; }
+
+.container-page { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
+.paper-grid {
+  background-image: linear-gradient(rgba(21,63,51,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(21,63,51,.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.brand-gradient { background: linear-gradient(135deg, #153f33 0%, #087a4b 58%, #2f8f69 100%); }
+.heritage-card { box-shadow: 0 18px 60px rgba(21,63,51,.10); }

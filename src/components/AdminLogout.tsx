@@ -1,0 +1,1 @@
+"use client"; import { useRouter } from "next/navigation"; export default function AdminLogout(){const r=useRouter(); return <button onClick={async()=>{await fetch("/api/admin/logout",{method:"POST"}); r.push("/admin/login")}} className="rounded-full border border-slate-200 px-4 py-2 text-sm font-bold">Logout</button>}
