@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import LaunchCurtain from "@/components/LaunchCurtain";
 import SectionTitle from "@/components/SectionTitle";
 import { readData } from "@/lib/data";
 import type { Activity, EventItem, Publication, SiteData } from "@/lib/types";
 import { ArrowRight, BookOpen, CalendarDays } from "lucide-react";
 
-export default async function Home(){const site=await readData<SiteData>("site.json"); const activities=await readData<Activity[]>("activities.json"); const events=await readData<EventItem[]>("events.json"); const pubs=await readData<Publication[]>("publications.json"); return <main><Hero/>
+export default async function Home(){const site=await readData<SiteData>("site.json"); const activities=await readData<Activity[]>("activities.json"); const events=await readData<EventItem[]>("events.json"); const pubs=await readData<Publication[]>("publications.json"); return <main><LaunchCurtain/><Hero/>
 <section className="container-page py-20"><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">{site.stats.map(s=><div key={s.label} className="rounded-2xl border border-emerald-950/10 bg-white p-6"><div className="font-serif text-3xl font-black text-[#087a4b]">{s.value}</div><div className="mt-2 text-sm text-slate-500">{s.label}</div></div>)}</div></section>
 <section className="container-page grid gap-10 py-10 lg:grid-cols-[.9fr_1.1fr]"><SectionTitle eyebrow="About the Society" title="A platform for knowledge, culture and humane values." text={site.mission}/><div className="rounded-[2rem] bg-[#f8f3e9] p-8 md:p-10"><div className="text-sm font-bold uppercase tracking-[.2em] text-[#b99245]">Our vision</div><p className="mt-4 font-serif text-2xl font-bold leading-10 text-[#153f33]">{site.vision}</p><Link href="/about" className="mt-7 inline-flex items-center gap-2 font-bold text-[#087a4b]">Discover our story <ArrowRight size={18}/></Link></div></section>
 <section className="mt-16 bg-[#153f33] py-20 text-white"><div className="container-page"><SectionTitle inverse eyebrow="What we do" title="From scholarship to social dialogue" text="A modern presentation of the Society’s key areas of activity."/><div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{activities.map(a=><div key={a.title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-7"><h3 className="text-xl font-bold text-emerald-200">{a.title}</h3><p className="mt-3 leading-7 text-white/65">{a.text}</p></div>)}</div></div></section>
