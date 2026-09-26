@@ -1,15 +1,132 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import LaunchCurtain from "@/components/LaunchCurtain";
 import SectionTitle from "@/components/SectionTitle";
 import { readData } from "@/lib/data";
 import type { Activity, EventItem, Publication, SiteData } from "@/lib/types";
 import { ArrowRight, BookOpen, CalendarDays } from "lucide-react";
 
-export default async function Home(){const site=await readData<SiteData>("site.json"); const activities=await readData<Activity[]>("activities.json"); const events=await readData<EventItem[]>("events.json"); const pubs=await readData<Publication[]>("publications.json"); return <main><Hero/>
-<section className="container-page py-20"><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">{site.stats.map(s=><div key={s.label} className="rounded-2xl border border-emerald-950/10 bg-white p-6"><div className="font-serif text-3xl font-black text-[#087a4b]">{s.value}</div><div className="mt-2 text-sm text-slate-500">{s.label}</div></div>)}</div></section>
-<section className="container-page grid gap-10 py-10 lg:grid-cols-[.9fr_1.1fr]"><SectionTitle eyebrow="About the Society" title="A platform for knowledge, culture and humane values." text={site.mission}/><div className="rounded-[2rem] bg-[#f8f3e9] p-8 md:p-10"><div className="text-sm font-bold uppercase tracking-[.2em] text-[#b99245]">Our vision</div><p className="mt-4 font-serif text-2xl font-bold leading-10 text-[#153f33]">{site.vision}</p><Link href="/about" className="mt-7 inline-flex items-center gap-2 font-bold text-[#087a4b]">Discover our story <ArrowRight size={18}/></Link></div></section>
-<section className="mt-16 bg-[#153f33] py-20 text-white"><div className="container-page"><SectionTitle inverse eyebrow="What we do" title="From scholarship to social dialogue" text="A modern presentation of the Society’s key areas of activity."/><div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{activities.map(a=><div key={a.title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-7"><h3 className="text-xl font-bold text-emerald-200">{a.title}</h3><p className="mt-3 leading-7 text-white/65">{a.text}</p></div>)}</div></div></section>
-<section className="container-page py-20"><div className="flex items-end justify-between gap-5"><SectionTitle eyebrow="Events" title="Upcoming & recent programmes"/><Link href="/events" className="hidden sm:inline-flex items-center gap-2 font-bold text-[#087a4b]">View all <ArrowRight size={18}/></Link></div><div className="mt-10 grid gap-5 lg:grid-cols-3">{events.map(e=><article key={e.id} className="rounded-[1.5rem] border border-slate-200 bg-white p-6"><div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#087a4b]"><CalendarDays size={16}/>{e.date}</div><h3 className="mt-4 text-xl font-bold text-[#153f33]">{e.title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{e.text}</p><div className="mt-5 text-xs font-bold text-slate-400">{e.location} · {e.status}</div></article>)}</div></section>
-<section className="bg-[#f8f3e9] py-20"><div className="container-page"><SectionTitle eyebrow="Publications" title="A living archive of ideas" text="Demo catalogue cards can later become a searchable PDF and book archive."/><div className="mt-10 grid gap-5 lg:grid-cols-3">{pubs.map((p,i)=><article key={p.id} className="heritage-card rounded-[1.5rem] bg-white p-7"><div className="grid size-12 place-items-center rounded-xl bg-[#087a4b]/10 text-[#087a4b]"><BookOpen/></div><div className="mt-5 text-xs font-bold uppercase tracking-wider text-[#b99245]">{p.type} · {p.year}</div><h3 className="mt-2 text-xl font-bold text-[#153f33]">{p.title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{p.description}</p></article>)}</div><Link href="/publications" className="mt-8 inline-flex items-center gap-2 font-bold text-[#087a4b]">Explore publication archive <ArrowRight size={18}/></Link></div></section>
-<section className="container-page py-20"><div className="rounded-[2.5rem] brand-gradient p-8 text-white md:p-14"><div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end"><div><div className="text-xs font-bold uppercase tracking-[.2em] text-emerald-200">Join the Society</div><h2 className="mt-4 max-w-3xl font-serif text-4xl font-black md:text-5xl">Help carry forward a tradition of knowledge, dignity and social progress.</h2></div><Link href="/membership" className="rounded-full bg-white px-7 py-3 font-bold text-[#153f33]">Apply for Membership</Link></div></div></section>
-</main>}
+export default async function Home() {
+  const site = await readData<SiteData>("site.json");
+  const activities = await readData<Activity[]>("activities.json");
+  const events = await readData<EventItem[]>("events.json");
+  const pubs = await readData<Publication[]>("publications.json");
+
+  return (
+    <main>
+      <LaunchCurtain />
+      <Hero />
+      <section className="container-page py-20">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          {site.stats.map((s) => (
+            <div key={s.label} className="rounded-2xl border border-emerald-950/10 bg-white p-6">
+              <div className="font-serif text-3xl font-black text-[#087a4b]">{s.value}</div>
+              <div className="mt-2 text-sm text-slate-500">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="container-page grid gap-10 py-10 lg:grid-cols-[.9fr_1.1fr]">
+        <SectionTitle
+          eyebrow="About the Society"
+          title="A platform for knowledge, culture and humane values."
+          text={site.mission}
+        />
+        <div className="rounded-[2rem] bg-[#f8f3e9] p-8 md:p-10">
+          <div className="text-sm font-bold uppercase tracking-[.2em] text-[#b99245]">Our vision</div>
+          <p className="mt-4 font-serif text-2xl font-bold leading-10 text-[#153f33]">{site.vision}</p>
+          <Link href="/about" className="mt-7 inline-flex items-center gap-2 font-bold text-[#087a4b]">
+            Discover our story <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
+      <section className="mt-16 bg-[#153f33] py-20 text-white">
+        <div className="container-page">
+          <SectionTitle
+            inverse
+            eyebrow="What we do"
+            title="From scholarship to social dialogue"
+            text="A modern presentation of the Society’s key areas of activity."
+          />
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {activities.map((a) => (
+              <div key={a.title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-7">
+                <h3 className="text-xl font-bold text-emerald-200">{a.title}</h3>
+                <p className="mt-3 leading-7 text-white/65">{a.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="container-page py-20">
+        <div className="flex items-end justify-between gap-5">
+          <SectionTitle eyebrow="Events" title="Upcoming & recent programmes" />
+          <Link href="/events" className="hidden sm:inline-flex items-center gap-2 font-bold text-[#087a4b]">
+            View all <ArrowRight size={18} />
+          </Link>
+        </div>
+        <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          {events.map((e) => (
+            <article key={e.id} className="rounded-[1.5rem] border border-slate-200 bg-white p-6">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#087a4b]">
+                <CalendarDays size={16} />
+                {e.date}
+              </div>
+              <h3 className="mt-4 text-xl font-bold text-[#153f33]">{e.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{e.text}</p>
+              <div className="mt-5 text-xs font-bold text-slate-400">
+                {e.location} · {e.status}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#f8f3e9] py-20">
+        <div className="container-page">
+          <SectionTitle
+            eyebrow="Publications"
+            title="A living archive of ideas"
+            text="Demo catalogue cards can later become a searchable PDF and book archive."
+          />
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {pubs.map((p) => (
+              <article key={p.id} className="heritage-card rounded-[1.5rem] bg-white p-7">
+                <div className="grid size-12 place-items-center rounded-xl bg-[#087a4b]/10 text-[#087a4b]">
+                  <BookOpen />
+                </div>
+                <div className="mt-5 text-xs font-bold uppercase tracking-wider text-[#b99245]">
+                  {p.type} · {p.year}
+                </div>
+                <h3 className="mt-2 text-xl font-bold text-[#153f33]">{p.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{p.description}</p>
+              </article>
+            ))}
+          </div>
+          <Link href="/publications" className="mt-8 inline-flex items-center gap-2 font-bold text-[#087a4b]">
+            Explore publication archive <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
+      <section className="container-page py-20">
+        <div className="rounded-[2.5rem] brand-gradient p-8 text-white md:p-14">
+          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-[.2em] text-emerald-200">Join the Society</div>
+              <h2 className="mt-4 max-w-3xl font-serif text-4xl font-black md:text-5xl">
+                Help carry forward a tradition of knowledge, dignity and social progress.
+              </h2>
+            </div>
+            <Link href="/membership" className="rounded-full bg-white px-7 py-3 font-bold text-[#153f33]">
+              Apply for Membership
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

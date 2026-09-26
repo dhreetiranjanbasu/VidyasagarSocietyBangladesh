@@ -97,4 +97,3 @@ The website footer includes the developer credit:
 `Developed By Modern Dev Technologies, Contact: 01316950214`
 
 Logo asset retained at: `public/assets/modern-dev-technologies-logo.png`
-
