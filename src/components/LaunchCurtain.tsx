@@ -45,7 +45,7 @@ export default function LaunchCurtain() {
       <span className="launch-curtain-content">
         <span className="launch-ornament" aria-hidden="true">✦</span>
         <span className="launch-kicker">Official Website Opening</span>
-        <span className="launch-title">Welcome to<br />BidyaShagor Society Website</span>
+        <span className="launch-title">Welcome to<br />Vidyasagar Society Website</span>
         <span className="launch-divider" aria-hidden="true"><i /><b>◆</b><i /></span>
         <span className="launch-instruction">Click or tap anywhere to enter</span>
       </span>
