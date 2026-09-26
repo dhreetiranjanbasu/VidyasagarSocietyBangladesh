@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "title": "Vidyasagar: Education, Humanity & Reform",
+    "type": "Demo Book",
+    "year": "2026",
+    "author": "Vidyasagar Society Bangladesh",
+    "description": "A demo catalogue item showing how Society publications can be presented with cover, summary and downloadable file."
+  },
+  {
+    "id": "p2",
+    "title": "Commemorative Publication — Birth Anniversary",
+    "type": "Commemorative",
+    "year": "2025",
+    "author": "Editorial Board",
+    "description": "Example archival publication record. Replace with the Society’s verified publication metadata."
+  },
+  {
+    "id": "p3",
+    "title": "Humanism and the Bengali Renaissance",
+    "type": "Research & Essays",
+    "year": "2024",
+    "author": "Contributors",
+    "description": "Demo research collection for the publication library interface."
+  }
+]

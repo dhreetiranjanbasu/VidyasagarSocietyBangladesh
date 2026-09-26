@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server"; import { appendData } from "@/lib/data"; import { randomUUID } from "node:crypto";
+export async function POST(req:Request){const b=await req.json(); if(!b.name||!b.email||!b.phone)return NextResponse.json({error:"Missing required fields"},{status:400}); const item={...b,id:randomUUID(),createdAt:new Date().toISOString(),status:"Pending"}; await appendData("membership-applications.json",item); return NextResponse.json({ok:true,item});}

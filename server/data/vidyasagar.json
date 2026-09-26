@@ -1,0 +1,131 @@
+{
+  "source": "https://en.wikipedia.org/wiki/Ishwar_Chandra_Vidyasagar",
+  "updatedForDemo": "2026-08-14",
+  "name": "Ishwar Chandra Vidyasagar",
+  "birthName": "Ishwar Chandra Bandyopadhyay",
+  "born": "26 September 1820",
+  "birthPlace": "Birsingha, Bengal Presidency, British India",
+  "died": "29 July 1891",
+  "deathPlace": "Calcutta, Bengal Presidency, British India",
+  "roles": [
+    "Educator",
+    "Social reformer",
+    "Author"
+  ],
+  "language": "Bengali",
+  "almaMater": "Sanskrit College, Calcutta",
+  "spouse": "Dinamayee Devi",
+  "children": "One son, Narayan Chandra Bandyopadhyaya",
+  "summary": "A major figure of the Bengal Renaissance, Vidyasagar combined scholarship, educational reform, literary work and social action. He became especially associated with advocacy for Hindu widow remarriage, opposition to child marriage and polygamy, support for female education, and reform of educational institutions.",
+  "titleMeaning": "The honorific ‘Vidyasagar’ means ‘Ocean of Knowledge’ and was awarded in recognition of his scholarship.",
+  "timeline": [
+    {
+      "year": "1820",
+      "title": "Born at Birsingha",
+      "text": "Born to Thakurdas Bandyopadhyay and Bhagavati Devi in Birsingha village."
+    },
+    {
+      "year": "1829",
+      "title": "Moved to Calcutta",
+      "text": "As a child he moved to Calcutta and pursued an intensive education."
+    },
+    {
+      "year": "1839",
+      "title": "Sanskrit law examination",
+      "text": "Successfully completed his Sanskrit law examination."
+    },
+    {
+      "year": "1841",
+      "title": "Fort William College",
+      "text": "Joined Fort William College as head of the Sanskrit department at about twenty-one years of age."
+    },
+    {
+      "year": "1846",
+      "title": "Sanskrit College administration",
+      "text": "Joined Sanskrit College as Assistant Secretary and proposed educational reforms."
+    },
+    {
+      "year": "1850s",
+      "title": "Social reform campaigns",
+      "text": "Became a leading advocate for widow remarriage, women’s education and reform of harmful marriage customs."
+    },
+    {
+      "year": "1856",
+      "title": "Widow Remarriage Act",
+      "text": "His sustained campaign formed an important part of the movement that led to the Hindu Widows’ Remarriage Act, 1856."
+    },
+    {
+      "year": "1858",
+      "title": "Somprakash initiative",
+      "text": "The original plan for the weekly Somprakash Patrika was associated with Vidyasagar; he continued to advise on editorial matters."
+    },
+    {
+      "year": "1873",
+      "title": "Karmatar / Santhal Pargana",
+      "text": "Moved to Karmatar, where he spent many later years and supported girls’ education, adult learning and charitable medical care."
+    },
+    {
+      "year": "1877",
+      "title": "CIE recognition",
+      "text": "Received the designation Companion of the Indian Empire in recognition of scholarship and public work."
+    },
+    {
+      "year": "1891",
+      "title": "Death in Calcutta",
+      "text": "Died on 29 July 1891 at the age of seventy."
+    }
+  ],
+  "sections": [
+    {
+      "slug": "biography",
+      "title": "Biography and education",
+      "text": "Vidyasagar was born in a Bengali Brahmin family in Birsingha. He travelled to Calcutta while young, studied intensively, earned scholarships and later completed a broad Sanskrit curriculum including grammar, literature, dialectics, Vedanta, Smriti and astronomy. His academic success led to appointments at Fort William College and Sanskrit College."
+    },
+    {
+      "slug": "women",
+      "title": "Women’s education and social reform",
+      "text": "He worked to improve the position of women, supported female education and became the most prominent public advocate for Hindu widow remarriage. He also opposed child marriage and polygamy and argued for reform from within society."
+    },
+    {
+      "slug": "widow-remarriage",
+      "title": "Widow Remarriage Act",
+      "text": "Vidyasagar petitioned the colonial Legislative Council in support of Hindu widow remarriage despite strong organized opposition. The Hindu Widows’ Remarriage Act was passed in 1856, and his campaign remains one of the best-known parts of his reform legacy."
+    },
+    {
+      "slug": "education-debate",
+      "title": "Education policy debate",
+      "text": "The historical record also contains debated positions in his writings on how education should be expanded. A 1859 letter discussed prioritizing higher classes in a particular policy context, and accounts of caste attitudes at Sanskrit College have been cited critically. This section is included so the knowledge centre presents the supplied source with context rather than only celebratory material."
+    },
+    {
+      "slug": "santhal",
+      "title": "Vidyasagar in Santhal Pargana",
+      "text": "From 1873 he spent more than eighteen years connected with Karmatar. At his home, Nandan Kanan, he supported a girls’ school, adult night education and a free homeopathic clinic serving local tribal communities. The site later became a place of remembrance."
+    },
+    {
+      "slug": "ramakrishna",
+      "title": "Meeting with Ramakrishna",
+      "text": "Accounts describe a cordial meeting between Vidyasagar and Ramakrishna, remembered for an exchange built around Vidyasagar’s title ‘Ocean of Knowledge’ and mutual respect despite their different educational and intellectual backgrounds."
+    },
+    {
+      "slug": "legacy",
+      "title": "Accolades and legacy",
+      "text": "Vidyasagar has been remembered through educational institutions, public places, bridges, stamps and cultural works. He was ranked ninth in the BBC’s 2004 poll of the greatest Bengalis. Institutions and locations bearing his name include Vidyasagar College, Vidyasagar University, Vidyasagar Setu and Vidyasagar Railway Station."
+    },
+    {
+      "slug": "culture",
+      "title": "Popular culture",
+      "text": "A Bengali-language biographical film titled ‘Vidyasagar’ was released in 1950, directed by Kali Prasad Ghosh and starring Pahadi Sanyal in the title role."
+    }
+  ],
+  "legacyPlaces": [
+    "Vidyasagar College",
+    "Vidyasagar College for Women",
+    "Vidyasagar University",
+    "Vidyasagar Setu",
+    "Vidyasagar Railway Station",
+    "Vidyasagar Shishu Niketan",
+    "Vidyasagar Teachers’ Training College",
+    "Ishwar Chandra Vidyasagar Polytechnic"
+  ],
+  "editorialNote": "For a production knowledge portal, verify historical claims against primary and scholarly sources and add page-level citations. This demo deliberately labels its main source."
+}

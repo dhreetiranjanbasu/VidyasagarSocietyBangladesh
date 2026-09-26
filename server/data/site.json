@@ -1,0 +1,38 @@
+{
+  "name": "Vidyasagar Society Bangladesh",
+  "nameBn": "বিদ্যাসাগর সোসাইটি বাংলাদেশ",
+  "tagline": "Committed to building a knowledge-based humane society",
+  "taglineBn": "জ্ঞানভিত্তিক মানবিক সমাজ নির্মাণে অঙ্গীকারবদ্ধ",
+  "established": 1997,
+  "phone": "+8801711423913",
+  "email": "vidyasagarsocietyb@gmail.com",
+  "address": "Flat # 5D, House # 161/7, Road # 6, Block # A, West Dhanmondi, Bosila, Mohammadpur, Dhaka-1207",
+  "mission": "To promote education, humanism, interfaith harmony, Bengali language and culture, and social progress inspired by the life and ideals of Ishwar Chandra Vidyasagar.",
+  "vision": "A knowledgeable, humane, inclusive and prejudice-free society where education and reason support dignity and equal opportunity.",
+  "stats": [
+    {
+      "label": "Established",
+      "value": "1997"
+    },
+    {
+      "label": "Seminars reported",
+      "value": "32+"
+    },
+    {
+      "label": "Books reported",
+      "value": "18+"
+    },
+    {
+      "label": "Commemorative publications",
+      "value": "52+"
+    },
+    {
+      "label": "Life members reported",
+      "value": "~300"
+    }
+  ],
+  "sourceNotes": [
+    "Letterhead supplied by the client",
+    "Public reporting on the Society's 30th Annual Conference (June 2026)"
+  ]
+}

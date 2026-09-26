@@ -1,0 +1,26 @@
+[
+  {
+    "id": "e1",
+    "date": "26 Sep 2026",
+    "title": "Vidyasagar Birth Anniversary Discussion",
+    "location": "Dhaka",
+    "status": "Upcoming",
+    "text": "Demo event for client presentation. Final venue, speakers and registration details to be confirmed."
+  },
+  {
+    "id": "e2",
+    "date": "29 Jul 2026",
+    "title": "135th Death Anniversary Observance",
+    "location": "Dhaka",
+    "status": "Archive",
+    "text": "Memorial discussion on the contemporary relevance of Ishwar Chandra Vidyasagar."
+  },
+  {
+    "id": "e3",
+    "date": "29 Jun 2026",
+    "title": "30th Annual Conference",
+    "location": "Dhaka",
+    "status": "Archive",
+    "text": "Annual report, remembrance session and election of the new executive committee."
+  }
+]
